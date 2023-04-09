@@ -6,47 +6,55 @@
     <title>ToDo App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body class="container">
+
     <br>
-    <div class="card">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">States Visited</span>
+        </div>
+      </nav>
+
+    <br>
+<div class="text-center">
+    <img src="https://conceptdraw.com/How-To-Guide/picture/Geo-Map--USA.png" width="500" class="text-center rounded" alt="A map of the United States">
+</div>
+
+<br>
+
+    <body class="container bg-secondary">
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>State</th>
+            <th>Date Visited</th>
+            <th>Remove</th>
+        </tr>
+    </table>        
+
+    <div class="card bg-dark" >
         <div class="card-body">
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-start-date">Start Date</label>
-                        <input type="date" class="form-control" id="new-start-date">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-End-date">End Date</label>
-                        <input type="date" class="form-control" id="new-end-date">
+                        <label for="new-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-date">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sml">
                     <div class="form-group">
-                        <label for="new-task">Task</label>
-                        <input type="text" class="form-control" id="new-task" placeholder="Task">
+                        <label for="new-state">State</label>
+                        <input type="text" class="form-control" id="new-state" placeholder="State">
                     </div> <br>
                 </div> 
                 <div>
-                    <button id="add" class="btn btn-primary form-control">Create</button>
+                    <button id="add" class="btn btn-primary form-control bg-info text-black">Add State</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <table id="list" class="table table-dark table-striped">
-        <tr>
-            <th>Task</th>
-            <th>Date Created</th>
-            <th>Start Date</th>
-            <th>Due Date</th>
-            <th>Actions</th>
-        </tr>
-    </table>        
 
     <script src="Week10.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
